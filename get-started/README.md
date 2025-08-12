@@ -23,14 +23,15 @@ This guide provides a proven pattern for bootstrapping modern, maintainable appl
 
 ## 📚 Quick Start
 
-1. **[Project Setup](01-project-setup.md)** - Initialize your project structure
-2. **[CLI Implementation](02-cli-implementation.md)** - Build your development workflow
-3. **[Architecture & Planning](03-architecture-planning.md)** - Define your system design
-4. **[Environment & Configuration](04-environment-configuration.md)** - Set up your development environment
-5. **[Backend Foundation](05-backend-foundation.md)** - Create your core service
-6. **[Validation Framework](06-validation-framework.md)** - Prove your concept works
-7. **[Troubleshooting](07-troubleshooting.md)** - Solve common problems
-8. **[Alternative Stacks](08-alternative-stacks.md)** - Use different technologies
+1. **[AI Tools Setup](00-ai-tools-setup.md)** - Configure Cursor, Claude, and other AI development tools
+2. **[Project Setup](01-project-setup.md)** - Initialize your project structure
+3. **[CLI Implementation](02-cli-implementation.md)** - Build your development workflow
+4. **[Architecture & Planning](03-architecture-planning.md)** - Define your system design
+5. **[Environment & Configuration](04-environment-configuration.md)** - Set up your development environment
+6. **[Backend Foundation](05-backend-foundation.md)** - Create your core service
+7. **[Validation Framework](06-validation-framework.md)** - Prove your concept works
+8. **[Troubleshooting](07-troubleshooting.md)** - Solve common problems
+9. **[Alternative Stacks](08-alternative-stacks.md)** - Use different technologies
 
 ## 🏗️ Project Structure Template
 
@@ -73,6 +74,12 @@ project-name/
 ```
 
 ## 🚀 Bootstrap Process Overview
+
+### Phase 0: AI Tools Setup (Day 0)
+- Configure Cursor with project-specific rules
+- Set up Claude context for architecture planning
+- Configure GitHub Copilot for code generation
+- Test AI tool integration
 
 ### Phase 1: Foundation Setup (Day 1)
 - Project initialization and directory structure
@@ -142,6 +149,9 @@ python cli/cli.py status
 
 ## 🎉 Getting Started Checklist
 
+- [ ] AI development tools configured (Cursor, Claude, Copilot)
+- [ ] Cursor rules customized for your project
+- [ ] AI tool integration tested and working
 - [ ] Project directory created
 - [ ] Git repository initialized
 - [ ] Directory structure created
