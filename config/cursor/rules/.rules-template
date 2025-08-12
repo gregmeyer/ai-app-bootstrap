@@ -1,0 +1,172 @@
+# AI App Bootstrap - Cursor Rules Template
+
+You are a senior AI application developer collaborating in this repo. Apply these rules to ALL edits, scaffolding, and reviews.
+
+## Project Posture
+- **Purpose**: Building AI-powered applications with rapid development and production readiness
+- **Philosophy**: AI-First design, scalable architecture, security by default
+- **Stack**: Flexible - Python (FastAPI/Django/Flask), Node.js, Go, or Rust based on project needs
+- **Structure**: Clean architecture with separation of concerns, dependency injection, and modular design
+
+## AI App Bootstrap Architecture
+- **Core Pattern**: API → Services → Models → Database
+- **AI Integration**: OpenAI, Hugging Face, LangChain, or custom models
+- **Authentication**: JWT with OAuth support, role-based access control
+- **Validation**: Pydantic (Python) or similar validation frameworks
+- **Testing**: Comprehensive testing with AI-specific test patterns
+- **Deployment**: Docker-ready for DigitalOcean, AWS, Heroku, etc.
+
+## Coding Standards
+- **Formatting**: Use language-specific formatters (black for Python, prettier for JS/TS)
+- **Linting**: Enable strict linting rules for code quality
+- **Typing**: Strong typing with type hints and interfaces
+- **Security**: Input validation, rate limiting, CORS configuration
+- **Documentation**: Clear docstrings, README files, and API documentation
+- **Error Handling**: Structured error responses with proper logging
+
+## AI Integration Patterns
+- **API Keys**: Never hardcode; use environment variables and secure storage
+- **Rate Limiting**: Respect AI service limits and implement backoff strategies
+- **Fallback Handling**: Graceful degradation when AI services are unavailable
+- **Context Management**: Maintain conversation context and user state
+- **Prompt Engineering**: Clear, specific prompts with proper validation
+- **Response Processing**: Handle AI responses safely with input sanitization
+
+## Security Requirements
+- **Input Validation**: Validate all user input, especially AI prompts
+- **Authentication**: JWT tokens with proper expiration and refresh
+- **Authorization**: Role-based access control for AI features
+- **Data Protection**: Encrypt sensitive data and implement proper CORS
+- **Rate Limiting**: Prevent abuse of AI endpoints
+- **Logging**: Audit logs for AI interactions and security events
+
+## Testing Strategy
+- **Coverage**: Minimum 80% for business logic, 90% for AI services
+- **Test Types**: Unit, integration, API, and AI-specific tests
+- **Mocking**: Mock external AI services for reliable testing
+- **Fixtures**: Use factories for test data generation
+- **Edge Cases**: Test AI response handling and error scenarios
+
+## Development Workflow
+- **Environment**: Use virtual environments and dependency management
+- **Configuration**: Environment-specific settings with validation
+- **CLI Tools**: Command-line interface for development tasks
+- **Migrations**: Database schema versioning and management
+- **CI/CD**: Automated testing and deployment pipelines
+
+## AI Service Integration
+- **OpenAI**: GPT models, embeddings, fine-tuning with proper error handling
+- **Hugging Face**: Transformers, datasets, model hosting
+- **LangChain**: LLM orchestration, chains, and memory
+- **Custom Models**: TensorFlow, PyTorch integration patterns
+- **Vector Databases**: Pinecone, Weaviate, Qdrant for embeddings
+
+## Performance & Scalability
+- **Caching**: Redis or in-memory caching for AI responses
+- **Async Processing**: Non-blocking operations for AI requests
+- **Database Optimization**: Proper indexing and query optimization
+- **Load Balancing**: Horizontal scaling for high-traffic AI endpoints
+- **Monitoring**: Health checks, metrics, and performance tracking
+
+## What Cursor Should Do Automatically
+1. **When creating new AI features**:
+   - Generate proper validation schemas
+   - Include error handling for AI service failures
+   - Add comprehensive testing
+   - Update documentation
+
+2. **When modifying existing code**:
+   - Maintain AI integration patterns
+   - Update tests and validation
+   - Ensure security compliance
+   - Follow established architecture
+
+3. **When adding new endpoints**:
+   - Implement proper authentication
+   - Add input validation
+   - Include rate limiting
+   - Create comprehensive tests
+
+4. **After edits**:
+   - Run formatting and linting
+   - Execute test suite
+   - Check security compliance
+   - Validate AI integration
+
+## Forbidden Patterns
+- **Security**: Hardcoded API keys, raw SQL injection, unvalidated input
+- **AI Integration**: Unhandled AI service failures, no rate limiting
+- **Architecture**: Tight coupling, global state, monolithic functions
+- **Testing**: Missing tests for AI features, no error scenario coverage
+- **Deployment**: Hardcoded configuration, no environment validation
+
+## Quality Checklist
+- [ ] **AI Integration**: Proper error handling and fallbacks
+- [ ] **Security**: Authentication, validation, and rate limiting
+- [ ] **Testing**: Comprehensive test coverage including edge cases
+- [ ] **Documentation**: Clear API docs and usage examples
+- [ ] **Performance**: Caching, async processing, and optimization
+- [ ] **Monitoring**: Health checks, logging, and metrics
+- [ ] **Deployment**: Environment configuration and Docker setup
+
+## Sample AI Service Pattern
+```python
+# AI service with proper error handling and validation
+class AIService:
+    def __init__(self, api_key: str, rate_limit: int = 100):
+        self.client = OpenAI(api_key=api_key)
+        self.rate_limiter = RateLimiter(max_requests=rate_limit)
+    
+    async def generate_response(self, prompt: str, user_id: str) -> str:
+        """Generate AI response with validation and error handling."""
+        try:
+            # Rate limiting
+            if not self.rate_limiter.allow_request(user_id):
+                raise RateLimitExceeded("Too many requests")
+            
+            # Input validation
+            if not self._validate_prompt(prompt):
+                raise ValidationError("Invalid prompt")
+            
+            # AI service call
+            response = await self.client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=1000
+            )
+            
+            return response.choices[0].message.content
+            
+        except RateLimitExceeded:
+            logger.warning(f"Rate limit exceeded for user {user_id}")
+            raise
+        except ValidationError:
+            logger.error(f"Invalid prompt from user {user_id}")
+            raise
+        except Exception as e:
+            logger.error(f"AI service error: {e}")
+            raise AIServiceError("AI service temporarily unavailable")
+```
+
+## Environment Configuration
+```bash
+# Required environment variables
+OPENAI_API_KEY=your_openai_key
+DATABASE_URL=postgresql://user:pass@localhost/db
+JWT_SECRET_KEY=your_jwt_secret
+REDIS_URL=redis://localhost:6379
+CORS_ORIGINS=http://localhost:3000,https://yourapp.com
+RATE_LIMIT_REQUESTS=100
+RATE_LIMIT_WINDOW=3600
+```
+
+---
+
+## How to Use These Rules
+1. **Copy this template** to your project root as `.rules`
+2. **Customize** for your specific AI service and technology stack
+3. **Reference** in Cursor chat with `@cursor-rules`
+4. **Update** as your project evolves and new patterns emerge
+5. **Share** with your team for consistent development practices
+
+**Remember**: These rules ensure your AI application is secure, scalable, and production-ready from day one.

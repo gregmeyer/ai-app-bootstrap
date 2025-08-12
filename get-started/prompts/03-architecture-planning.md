@@ -66,3 +66,4 @@ The user should provide:
 
 ## Next Steps
 After this prompt, proceed to the environment configuration prompt (04-environment-configuration.md) to set up development and production environments.
+

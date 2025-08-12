@@ -70,3 +70,4 @@ The user should provide:
 
 ## Next Steps
 After this prompt, proceed to the validation framework prompt (06-validation-framework.md) to implement robust data validation.
+

@@ -50,3 +50,4 @@ The user should provide:
 
 ## Next Steps
 After this prompt, proceed to the architecture planning prompt (03-architecture-planning.md) to design the application architecture.
+

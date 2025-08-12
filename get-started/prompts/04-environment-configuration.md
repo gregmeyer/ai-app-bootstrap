@@ -69,3 +69,4 @@ The user should provide:
 
 ## Next Steps
 After this prompt, proceed to the backend foundation prompt (05-backend-foundation.md) to start building the core backend services.
+
