@@ -64,3 +64,7 @@ The user should provide:
 
 ## Next Steps
 After this prompt, proceed to the CLI implementation prompt (02-cli-implementation.md) to set up the command-line interface for the project.
+
+## 🔗 Related Prompts
+- **Previous**: [00-setup-editor.md](00-setup-editor.md) - Set up your AI development editor
+- **Next**: [02-cli-implementation.md](02-cli-implementation.md) - Implement CLI tools

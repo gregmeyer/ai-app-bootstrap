@@ -470,3 +470,7 @@ export BACKEND_PORT=8001
 ---
 
 **Previous:** [Architecture & Planning](03-architecture-planning.md) ← | **Next:** [Backend Foundation](05-backend-foundation.md) →
+
+---
+
+**← Back to [Main README](../../README.md)**

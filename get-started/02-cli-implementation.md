@@ -360,3 +360,7 @@ mkdir -p agentContext/{architecture,decisions,notes}
 ---
 
 **Previous:** [Project Setup](01-project-setup.md) ← | **Next:** [Architecture & Planning](03-architecture-planning.md) →
+
+---
+
+**← Back to [Main README](../../README.md)**

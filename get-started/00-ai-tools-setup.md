@@ -284,3 +284,7 @@ After setting up your AI tools:
 ---
 
 **Remember**: Well-configured AI tools can dramatically accelerate your development. Take the time to set them up properly, and you'll reap the benefits throughout your project! 🚀
+
+---
+
+**← Back to [Main README](../../README.md)**

@@ -51,3 +51,7 @@ The user should provide:
 ## Next Steps
 After this prompt, proceed to the architecture planning prompt (03-architecture-planning.md) to design the application architecture.
 
+## 🔗 Related Prompts
+- **Previous**: [01-initial-setup.md](01-initial-setup.md) - Project overview and context
+- **Next**: [03-architecture-planning.md](03-architecture-planning.md) - Architecture design
+

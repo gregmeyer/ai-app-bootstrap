@@ -1057,3 +1057,7 @@ mkdir -p agentContext/{architecture,decisions,notes} tickets stories cli
 ---
 
 **Previous:** [Troubleshooting](07-troubleshooting.md) ← | **Next:** [Back to Overview](../README.md) →
+
+---
+
+**← Back to [Main README](../../README.md)**
