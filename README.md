@@ -41,8 +41,8 @@ Complete step-by-step tutorials for building AI applications:
 - **[08: Alternative Stacks](get-started/08-alternative-stacks.md)** - Different technology combinations
 
 ### 🎨 Project Templates & AI Tools
+- **AI Agent Prompts**: **Primary way to get started** - Series of prompts to guide AI assistants through development
 - **Project Template**: Structured format for defining your application requirements
-- **AI Agent Prompts**: Series of prompts to guide AI assistants through development
 - **AI Tools Configuration**: Ready-to-use rules for Cursor, Claude, and other AI assistants
 - **Cursor Rules Template**: Comprehensive .rules file for immediate AI optimization
 
@@ -57,7 +57,20 @@ Complete step-by-step tutorials for building AI applications:
 
 ## 🚀 Quick Start
 
-### 1. Set Up Your AI Development Tools
+### 1. Start with AI Agent Prompts (Recommended)
+
+**The most AI-native way to use this toolkit:**
+```bash
+# Navigate to the AI agent prompts
+cd get-started/prompts
+
+# Start with the editor setup prompt
+# This will guide you through the entire process with AI assistance
+```
+
+**Why start with prompts?** The AI agent prompts provide step-by-step guidance with built-in AI assistance, making your development journey faster and more effective.
+
+### 2. Set Up Your AI Development Tools
 
 **First, configure your AI development environment:**
 ```bash
@@ -72,27 +85,27 @@ nano .rules
 
 **Works with**: Claude, Gemini, OpenAI, Cursor, GitHub Copilot, and many other AI development assistants
 
-### 2. Choose Your Development Path
+### 3. Choose Your Development Path
 
-**Option A: Follow the Guides**
+**Option A: AI Agent Prompts (Recommended)**
+```bash
+# Use the structured prompts for AI-assisted development
+cd get-started/prompts
+# Start with 00-setup-editor.md
+```
+
+**Option B: Follow the Guides**
 ```bash
 # Start with the get-started guides
 cd get-started
 # Begin with 00-ai-tools-setup.md
 ```
 
-**Option B: Use the Project Template**
+**Option C: Use the Project Template**
 ```bash
 # Fill out the project template
 open examples/project-template.md
 # Use it to prompt AI assistants
-```
-
-**Option C: AI Agent Prompts**
-```bash
-# Use the structured prompts
-cd get-started/prompts
-# Start with 01-initial-setup.md
 ```
 
 ### 2. Define Your Project
@@ -106,15 +119,23 @@ Use the project template to clearly define:
 
 ### 3. Follow the Development Flow
 
-1. **AI Tools Setup** → [00-ai-tools-setup.md](get-started/00-ai-tools-setup.md) - Configure Cursor, Claude, and other AI development tools
-2. **Project Setup** → [01-project-setup.md](get-started/01-project-setup.md) - Initialize project structure and dependencies
-3. **CLI Implementation** → [02-cli-implementation.md](get-started/02-cli-implementation.md) - Build command-line tools for development
-4. **Architecture Planning** → [03-architecture-planning.md](get-started/03-architecture-planning.md) - Design scalable system architecture
-5. **Environment Configuration** → [04-environment-configuration.md](get-started/04-environment-configuration.md) - Set up secure environment management
-6. **Backend Foundation** → [05-backend-foundation.md](get-started/05-backend-foundation.md) - Build robust backend services
-7. **Validation Framework** → [06-validation-framework.md](get-started/06-validation-framework.md) - Implement data validation and security
-8. **Troubleshooting** → [07-troubleshooting.md](get-started/07-troubleshooting.md) - Common issues and solutions
-9. **Alternative Stacks** → [08-alternative-stacks.md](get-started/08-alternative-stacks.md) - Different technology combinations
+**Start with AI Agent Prompts (Recommended):**
+1. **[00-setup-editor.md](get-started/prompts/00-setup-editor.md)** - Set up your AI development editor with AI assistance
+2. **[01-initial-setup.md](get-started/prompts/01-initial-setup.md)** - Get project overview and context with AI guidance
+3. **[02-cli-implementation.md](get-started/prompts/02-cli-implementation.md)** - Build CLI tools with AI assistance
+4. **[03-architecture-planning.md](get-started/prompts/03-architecture-planning.md)** - Design architecture with AI guidance
+5. **[04-environment-configuration.md](get-started/prompts/04-environment-configuration.md)** - Configure environment with AI help
+
+**Or follow the traditional guides:**
+6. **[00-ai-tools-setup.md](get-started/00-ai-tools-setup.md)** - Configure Cursor, Claude, and other AI development tools
+7. **[01-project-setup.md](get-started/01-project-setup.md)** - Initialize project structure and dependencies
+8. **[02-cli-implementation.md](get-started/02-cli-implementation.md)** - Build command-line tools for development
+9. **[03-architecture-planning.md](get-started/03-architecture-planning.md)** - Design scalable system architecture
+10. **[04-environment-configuration.md](get-started/04-environment-configuration.md)** - Set up secure environment management
+11. **[05-backend-foundation.md](get-started/05-backend-foundation.md)** - Build robust backend services
+12. **[06-validation-framework.md](get-started/06-validation-framework.md)** - Implement data validation and security
+13. **[07-troubleshooting.md](get-started/07-troubleshooting.md)** - Common issues and solutions
+14. **[08-alternative-stacks.md](get-started/08-alternative-stacks.md)** - Different technology combinations
 
 ## 🎯 Use Cases
 
