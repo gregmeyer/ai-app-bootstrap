@@ -39,11 +39,14 @@ Complete step-by-step tutorials for building AI applications:
 - **07: Troubleshooting** - Common issues and solutions
 - **08: Alternative Stacks** - Different technology combinations
 
-### 🎨 Project Templates
+### 🎨 Project Templates & AI Tools
 - **Project Template**: Structured format for defining your application requirements
 - **AI Agent Prompts**: Series of prompts to guide AI assistants through development
+- **AI Tools Configuration**: Ready-to-use rules for Cursor, Claude, and other AI assistants
+- **Cursor Rules Template**: Comprehensive .rules file for immediate AI optimization
 
 ### 🔧 Core Components
+- **AI Tools Configuration**: Optimized rules for Cursor, Claude, and other AI assistants
 - **Project Structure**: Clean, scalable architecture patterns
 - **CLI Framework**: Command-line interface for project management
 - **Validation System**: Robust data validation and security
@@ -53,13 +56,28 @@ Complete step-by-step tutorials for building AI applications:
 
 ## 🚀 Quick Start
 
-### 1. Choose Your Path
+### 1. Set Up Your AI Development Tools
+
+**First, configure your AI development environment:**
+```bash
+# Copy the AI App Bootstrap rules template
+cp config/cursor/rules/.rules-template .rules
+
+# Customize the rules for your project
+nano .rules
+
+# Restart Cursor to activate the rules
+```
+
+**Works with**: Claude, Gemini, OpenAI, Cursor, GitHub Copilot, and many other AI development assistants
+
+### 2. Choose Your Development Path
 
 **Option A: Follow the Guides**
 ```bash
 # Start with the get-started guides
 cd get-started
-# Begin with 01-project-setup.md
+# Begin with 00-ai-tools-setup.md
 ```
 
 **Option B: Use the Project Template**
@@ -76,8 +94,6 @@ cd get-started/prompts
 # Start with 01-initial-setup.md
 ```
 
-**Works with**: Claude, Gemini, OpenAI, Cursor, GitHub Copilot, and many other AI development assistants
-
 ### 2. Define Your Project
 
 Use the project template to clearly define:
@@ -89,14 +105,15 @@ Use the project template to clearly define:
 
 ### 3. Follow the Development Flow
 
-1. **Setup** → Project structure and dependencies
-2. **CLI** → Command-line tools for development
-3. **Architecture** → System design and planning
-4. **Environment** → Configuration and security
-5. **Backend** → Core services and API
-6. **Validation** → Data integrity and security
-7. **Testing** → Quality assurance
-8. **Deployment** → Production readiness
+1. **AI Tools** → Configure Cursor, Claude, and other AI development tools
+2. **Setup** → Project structure and dependencies
+3. **CLI** → Command-line tools for development
+4. **Architecture** → System design and planning
+5. **Environment** → Configuration and security
+6. **Backend** → Core services and API
+7. **Validation** → Data integrity and security
+8. **Testing** → Quality assurance
+9. **Deployment** → Production readiness
 
 ## 🎯 Use Cases
 
@@ -132,6 +149,23 @@ Use the project template to clearly define:
 
 **Deployment Targets**: DigitalOcean, AWS, Google Cloud, Azure, Heroku, Railway, Render
 **Development Approach**: Custom applications built from the ground up, not framework plugins
+
+## 🤖 AI Development Tools
+
+### **AI Tools Configuration System**
+The AI App Bootstrap toolkit includes a comprehensive configuration system for optimizing AI development tools:
+
+- **Cursor Rules**: Ready-to-use `.rules` template for immediate AI optimization
+- **Claude Context**: Structured prompts and context for architecture planning
+- **GitHub Copilot**: Configuration patterns for inline AI assistance
+- **Multi-Provider Support**: Extensible system for any AI development tool
+
+### **Quick AI Tools Setup**
+```bash
+# Get started with AI-optimized development in minutes
+cp config/cursor/rules/.rules-template .rules
+# Customize for your project, restart Cursor, and start coding with AI assistance
+```
 
 ## 🛠️ Technology Stack
 
