@@ -30,14 +30,15 @@ AI App Bootstrap is a comprehensive framework that helps developers quickly buil
 ### 📚 Get Started Guides
 Complete step-by-step tutorials for building AI applications:
 
-- **01: Project Setup** - Initialize your project with the right structure
-- **02: CLI Implementation** - Build powerful command-line tools
-- **03: Architecture Planning** - Design scalable system architecture
-- **04: Environment Configuration** - Set up secure environment management
-- **05: Backend Foundation** - Build robust backend services
-- **06: Validation Framework** - Implement data validation and security
-- **07: Troubleshooting** - Common issues and solutions
-- **08: Alternative Stacks** - Different technology combinations
+- **[00: AI Tools Setup](get-started/00-ai-tools-setup.md)** - Configure Cursor, Claude, and other AI development tools
+- **[01: Project Setup](get-started/01-project-setup.md)** - Initialize your project with the right structure
+- **[02: CLI Implementation](get-started/02-cli-implementation.md)** - Build powerful command-line tools
+- **[03: Architecture Planning](get-started/03-architecture-planning.md)** - Design scalable system architecture
+- **[04: Environment Configuration](get-started/04-environment-configuration.md)** - Set up secure environment management
+- **[05: Backend Foundation](get-started/05-backend-foundation.md)** - Build robust backend services
+- **[06: Validation Framework](get-started/06-validation-framework.md)** - Implement data validation and security
+- **[07: Troubleshooting](get-started/07-troubleshooting.md)** - Common issues and solutions
+- **[08: Alternative Stacks](get-started/08-alternative-stacks.md)** - Different technology combinations
 
 ### 🎨 Project Templates & AI Tools
 - **Project Template**: Structured format for defining your application requirements
@@ -105,15 +106,15 @@ Use the project template to clearly define:
 
 ### 3. Follow the Development Flow
 
-1. **AI Tools** → Configure Cursor, Claude, and other AI development tools
-2. **Setup** → Project structure and dependencies
-3. **CLI** → Command-line tools for development
-4. **Architecture** → System design and planning
-5. **Environment** → Configuration and security
-6. **Backend** → Core services and API
-7. **Validation** → Data integrity and security
-8. **Testing** → Quality assurance
-9. **Deployment** → Production readiness
+1. **AI Tools Setup** → [00-ai-tools-setup.md](get-started/00-ai-tools-setup.md) - Configure Cursor, Claude, and other AI development tools
+2. **Project Setup** → [01-project-setup.md](get-started/01-project-setup.md) - Initialize project structure and dependencies
+3. **CLI Implementation** → [02-cli-implementation.md](get-started/02-cli-implementation.md) - Build command-line tools for development
+4. **Architecture Planning** → [03-architecture-planning.md](get-started/03-architecture-planning.md) - Design scalable system architecture
+5. **Environment Configuration** → [04-environment-configuration.md](get-started/04-environment-configuration.md) - Set up secure environment management
+6. **Backend Foundation** → [05-backend-foundation.md](get-started/05-backend-foundation.md) - Build robust backend services
+7. **Validation Framework** → [06-validation-framework.md](get-started/06-validation-framework.md) - Implement data validation and security
+8. **Troubleshooting** → [07-troubleshooting.md](get-started/07-troubleshooting.md) - Common issues and solutions
+9. **Alternative Stacks** → [08-alternative-stacks.md](get-started/08-alternative-stacks.md) - Different technology combinations
 
 ## 🎯 Use Cases
 
